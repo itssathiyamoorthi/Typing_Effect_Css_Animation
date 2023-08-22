@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.typewriting{
+    font-size: 5em;
+    font-family: monospace;
+    border-right: 3px solid;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: navy;
+    animation: typing 3s steps(20),blink 0.5s step-end infinite alternate;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50%{
+        border: transparent;
+    }
+}
